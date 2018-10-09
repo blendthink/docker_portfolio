@@ -1,0 +1,3 @@
+[submodule "app/honwaka-developer.github.io"]
+	path = app/honwaka-developer.github.io
+	url = https://github.com/honwaka-developer/honwaka-developer.github.io.git

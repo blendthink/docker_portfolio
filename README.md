@@ -26,23 +26,13 @@ docker-compose up -d
 
 docker-compose exec node /bin/sh
 
-vue create honwaka-developer.github.io
+git submodule add https://github.com/honwaka-developer/honwaka-developer.github.io.git app/honwaka-developer.github.io
 
 cd honwaka-developer.github.io
 
 npm run serve
 
 # localhost で確認
-
-mv app/honwaka-developer.github.io app/honwaka-developer.github.io.tmp 
-
-git submodule add https://github.com/honwaka-developer/honwaka-developer.github.io.git app/honwaka-developer.github.io
-
-mv app/honwaka-developer.github.io/.git app/honwaka-developer.github.io.tmp/.git
-
-rm -rf app/honwaka-developer.github.io
-
-mv app/honwaka-developer.github.io.tmp app/honwaka-developer.github.io
 ```
 
 ## その他
