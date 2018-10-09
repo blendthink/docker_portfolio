@@ -30,6 +30,8 @@ git submodule add https://github.com/honwaka-developer/honwaka-developer.github.
 
 cd honwaka-developer.github.io
 
+npm install
+
 npm run serve
 
 # localhost で確認
