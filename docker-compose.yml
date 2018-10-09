@@ -1,0 +1,13 @@
+version: "3.6"
+
+services:
+  node:
+    container_name: node_portfolio
+    build:
+      context: node
+    image: node/built:portfolio
+    tty: true
+    volumes:
+      - ./app:/app
+    ports:
+      - 80:8080
